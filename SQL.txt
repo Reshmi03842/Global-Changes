@@ -1,0 +1,5 @@
+SELECT city_data.year, city_data.city, city_data.avg_temp City_Avg_Temp, global_data.avg_temp Global_Avg_temp
+FROM city_data
+JOIN global_data
+ON global_data.year=city_data.year
+Where city_data.city = 'Pune';
